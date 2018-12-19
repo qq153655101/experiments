@@ -6,9 +6,18 @@
     <groupId>com.peng</groupId>
     <artifactId>experiments</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
-    <name>roc</name>
+    <modules>
+        <module>common-experiments</module>
+        <module>mq-experiment</module>
+        <module>async-experiment</module>
+        <module>design-patterns-experiment</module>
+    </modules>
+
+
+    <packaging>pom</packaging>
+
+    <name>peng-experiments</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -23,6 +32,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
 
     <dependencies>
         <dependency>
@@ -62,29 +72,8 @@
         </dependency>
     </dependencies>
 
+    <!--打包时开启-->
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <descriptors>
-                        <descriptor>${pom.basedir}/src/main/assembly.xml</descriptor>
-                    </descriptors>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -101,6 +90,7 @@
             </resource>
         </resources>
     </build>
+
 
 
 </project>

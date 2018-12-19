@@ -42,8 +42,8 @@ server:
 asyncSetter:
   timeout: 5
 mq:
-  topic: com.roc.topic
-  queue: com.roc.queue
+  topic: com.peng.topic
+  queue: com.peng.queue
 
 
 
@@ -79,7 +79,7 @@ server:
 asyncSetter:
   timeout: 5
 mq:
-  topic: com.roc.topic
-  queue: com.roc.queue
+  topic: com.peng.topic
+  queue: com.peng.queue
 
 ---
