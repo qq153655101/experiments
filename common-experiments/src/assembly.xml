@@ -9,17 +9,20 @@
     <fileSets>
 
         <fileSet>
-            <directory>src/bin</directory>
+            <directory>${project.basedir}/src/bin</directory>
             <outputDirectory>bin</outputDirectory>
-            <fileMode>0755</fileMode>
+            <!--<fileMode>0755</fileMode>-->
         </fileSet>
 
         <fileSet>
-            <directory>src/main/resources</directory>
+            <directory>${project.basedir}/src/main/resources</directory>
             <outputDirectory>conf</outputDirectory>
-            <fileMode>0644</fileMode>
         </fileSet>
 
+        <fileSet>
+            <directory>../mq-experiment/src/main/resources</directory>
+            <outputDirectory>conf</outputDirectory>
+        </fileSet>
     </fileSets>
 
     <dependencySets>
