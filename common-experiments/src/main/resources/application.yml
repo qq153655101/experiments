@@ -1,85 +1,17 @@
 spring:
-    thymeleaf:
-        cache: false
-        prefix: classpath:/templates/
-        encoding: utf-8
-        servlet:
-          content-type: application/alto-endpointcostparams+json
-logging:
-  config: classpath:logback-spring.xml
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: utf-8
+    servlet:
+      content-type: application/alto-endpointcostparams+json
+  application:
+    name: peng-experiments
 
-
----
-
-spring:
-  profiles:
-    active: dev
-  redis:
-    host: 119.23.20.12
-    port: 6379
-    password: 123456
-    lettuce:
-      pool:
-        max-active: 8
-        min-idle: 0
-        shutdown-timeout: 2000
-        max-wait: -1ms
-  activemq:
-    broker-url: tcp://119.23.20.12:61616
-    user: admin
-    password: 123456admin
-    pool:
-      enabled: true
-      max-connections: 50
-      expiry-timeout: 0ms
-      idle-timeout: 30s
-  jms:
-    pub-sub-domain: true
 server:
   port: 8888
   servlet:
     context-path: /api/
+
 asyncSetter:
   timeout: 5
-mq:
-  topic: com.peng.topic
-  queue: com.peng.queue
-
-
-
----
-spring:
-  profiles:
-    active: prd
-  redis:
-    host: 119.23.20.12
-    port: 6379
-    password: 123456
-    lettuce:
-      pool:
-        max-active: 8
-        min-idle: 0
-        shutdown-timeout: 2000
-        max-wait: -1ms
-  activemq:
-    broker-url: tcp://119.23.20.12:61616
-    user: admin
-    password: 123456admin
-    pool:
-      enabled: true
-      max-connections: 50
-      expiry-timeout: 0ms
-      idle-timeout: 30s
-  jms:
-    pub-sub-domain: true
-server:
-  port: 9999
-  servlet:
-    context-path: /api/
-asyncSetter:
-  timeout: 5
-mq:
-  topic: com.peng.topic
-  queue: com.peng.queue
-
----

@@ -1,7 +1,7 @@
 import java.util.concurrent.TimeUnit;
 
 /**
- * 测试synchronized修饰的非static方法是对象级别的还是类级别的
+ * 测试synchronized修饰的非static方法是对象级别的还是类级别的--对象级别（对象锁）
  * created by guoqingpeng on 2019/2/17
  */
 public class SynchronizedMethodTest {

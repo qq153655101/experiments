@@ -70,6 +70,18 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.39</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-util</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-log</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <!--打包时开启-->
