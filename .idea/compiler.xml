@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="async-experiment" />
+        <module name="common" />
         <module name="common-experiments" />
         <module name="design-patterns-experiment" />
         <module name="mq-experiment" />
