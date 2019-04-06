@@ -20,3 +20,16 @@ web:
     error-code-source: both
     property-path: exception.properties
     enum-class-name: com.peng.common.domain.ErrorCodeMsgEnum
+  cors:
+    enable: true
+    allow-credentials: true
+    allowed-origins:
+      - www.baidu.com
+      - www.qq.com
+    allowed-methods:
+      - GET
+      - POST
+      - DELETE
+      - PUT
+      - OPTIONS
+    max-age: 3000

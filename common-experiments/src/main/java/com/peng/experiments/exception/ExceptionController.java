@@ -20,6 +20,7 @@ public class ExceptionController {
 
     @GetMapping(value = "/check1")
     public void testThrowException1(String params){
+        log.info("错误容器内注册的全部异常信息:{}", ErrorResultRegistry.REGISTRY);
         VerifyUtil.checkNotNull(params,10001,"params");
     }
 
