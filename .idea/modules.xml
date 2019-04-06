@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/async-experiment/async-experiment.iml" filepath="$PROJECT_DIR$/async-experiment/async-experiment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-experiments/common-experiments.iml" filepath="$PROJECT_DIR$/common-experiments/common-experiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-experiment/design-patterns-experiment.iml" filepath="$PROJECT_DIR$/design-patterns-experiment/design-patterns-experiment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mq-experiment/mq-experiment.iml" filepath="$PROJECT_DIR$/mq-experiment/mq-experiment.iml" />
+    </modules>
+  </component>
+</project>
