@@ -15,3 +15,8 @@ server:
 
 asyncSetter:
   timeout: 5
+web:
+  exception:
+    error-code-source: both
+    property-path: exception.properties
+    enum-class-name: com.peng.common.domain.ErrorCodeMsgEnum

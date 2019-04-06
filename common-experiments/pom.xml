@@ -20,6 +20,12 @@
 
         <dependency>
             <groupId>com.peng</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.peng</groupId>
             <artifactId>design-patterns-experiment</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

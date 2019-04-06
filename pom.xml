@@ -12,6 +12,7 @@
         <module>mq-experiment</module>
         <module>async-experiment</module>
         <module>design-patterns-experiment</module>
+        <module>common</module>
     </modules>
 
 
@@ -79,6 +80,11 @@
         <dependency>
             <groupId>com.peng</groupId>
             <artifactId>peng-log</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-web</artifactId>
             <version>0.0.1-RELEASE</version>
         </dependency>
 
