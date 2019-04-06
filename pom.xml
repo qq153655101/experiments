@@ -6,15 +6,25 @@
     <groupId>com.peng</groupId>
     <artifactId>experiments</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
-    <name>roc</name>
+    <modules>
+        <module>common-experiments</module>
+        <module>mq-experiment</module>
+        <module>async-experiment</module>
+        <module>design-patterns-experiment</module>
+        <module>common</module>
+    </modules>
+
+
+    <packaging>pom</packaging>
+
+    <name>peng-experiments</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>2.0.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -23,6 +33,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
 
     <dependencies>
         <dependency>
@@ -60,16 +71,44 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.39</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-util</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-log</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>peng-web</artifactId>
+            <version>0.0.1-RELEASE</version>
+        </dependency>
+
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <!--打包时开启-->
+    <!--<build>-->
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>src/main/java</directory>-->
+                <!--<includes>-->
+                    <!--<include>**/*.xml</include>-->
+                <!--</includes>-->
+                <!--<filtering>false</filtering>-->
+            <!--</resource>-->
+            <!--<resource>-->
+                <!--<directory>src/main/resources</directory>-->
+                <!--<excludes>-->
+                    <!--<exclude>*</exclude>-->
+                <!--</excludes>-->
+            <!--</resource>-->
+        <!--</resources>-->
+    <!--</build>-->
+
 
 
 </project>

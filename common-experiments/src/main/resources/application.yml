@@ -1,0 +1,35 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: utf-8
+    servlet:
+      content-type: application/alto-endpointcostparams+json
+  application:
+    name: peng-experiments
+
+server:
+  port: 8888
+  servlet:
+    context-path: /api/
+
+asyncSetter:
+  timeout: 5
+web:
+  exception:
+    error-code-source: both
+    property-path: exception.properties
+    enum-class-name: com.peng.common.domain.ErrorCodeMsgEnum
+  cors:
+    enable: true
+    allow-credentials: true
+    allowed-origins:
+      - www.baidu.com
+      - www.qq.com
+    allowed-methods:
+      - GET
+      - POST
+      - DELETE
+      - PUT
+      - OPTIONS
+    max-age: 3000
