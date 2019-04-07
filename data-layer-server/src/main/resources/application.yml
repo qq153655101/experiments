@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: local
   thymeleaf:
     cache: false
     prefix: classpath:/templates/
@@ -8,7 +6,7 @@ spring:
     servlet:
       content-type: application/alto-endpointcostparams+json
   application:
-    name: peng-experiments
+    name: data-layer-server
   redis:
     host: localhost
     port: 6379
@@ -20,15 +18,10 @@ spring:
         min-idle: 10
     timeout: 2000ms
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9999/eureka/
-
 server:
-  port: 8888
+  port: 7777
   servlet:
-    context-path: /api/
+    context-path: /data/
 
 asyncSetter:
   timeout: 5
@@ -41,8 +34,7 @@ web:
     enable: true
     allow-credentials: true
     allowed-origins:
-      - www.baidu.com
-      - www.qq.com
+      - localhost:8888
     allowed-methods:
       - GET
       - POST
@@ -50,4 +42,3 @@ web:
       - PUT
       - OPTIONS
     max-age: 3000
-
