@@ -1,4 +1,4 @@
-package com.peng.experiments;
+package com.peng.experiments.web.log;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

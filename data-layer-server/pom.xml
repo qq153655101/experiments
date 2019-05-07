@@ -9,10 +9,14 @@
         <version>0.0.1-RELEASE</version>
     </parent>
 
+
     <modelVersion>4.0.0</modelVersion>
-    <version>0.0.1-RELEASE</version>
-    <artifactId>common</artifactId>
+
+    <artifactId>data-layer-server</artifactId>
+
     <dependencies>
+
+
         <dependency>
             <groupId>com.peng</groupId>
             <artifactId>peng-util</artifactId>
@@ -26,9 +30,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.peng</groupId>
-            <artifactId>peng-web</artifactId>
-            <version>0.0.1-RELEASE</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.26</version>
         </dependency>
     </dependencies>
 
@@ -43,5 +47,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 
 </project>
