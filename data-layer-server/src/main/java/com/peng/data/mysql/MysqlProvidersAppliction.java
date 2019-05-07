@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * created by guoqingpeng on 2019/4/7
  */
-@SpringBootApplication //(exclude = {DataSourceConnectionSource.class})
+@SpringBootApplication(scanBasePackages = "com.peng.data.mysql")
 @RestController
 @Slf4j
 public class MysqlProvidersAppliction {

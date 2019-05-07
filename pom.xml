@@ -11,9 +11,6 @@
         <module>common-experiments</module>
         <module>common</module>
         <module>common-parent</module>
-        <module>spring-eureka-server</module>
-        <module>spring-config-server</module>
-        <module>spring-gateway</module>
         <module>data-layer-server</module>
     </modules>
 

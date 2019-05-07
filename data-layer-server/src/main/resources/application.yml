@@ -17,6 +17,17 @@ spring:
         max-idle: 10
         min-idle: 10
     timeout: 2000ms
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/peng?characterEncoding=UTF-8
+    username: pengge
+    password: 123456-gqp
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.alibaba.druid.proxy.DruidDriver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
 
 server:
   port: 7777

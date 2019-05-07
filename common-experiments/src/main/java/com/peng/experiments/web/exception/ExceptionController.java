@@ -1,4 +1,4 @@
-package com.peng.experiments.exception;
+package com.peng.experiments.web.exception;
 
 
 import com.peng.common.domain.ErrorCodeMsgEnum;
